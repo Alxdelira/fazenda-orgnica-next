@@ -1,0 +1,40 @@
+@import '/src/styles/theme.scss';
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.titulo {
+    display: flex;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: $white;
+    position: absolute;
+    background-color: rgba($primary, 0.8); 
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.imagem {
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+}

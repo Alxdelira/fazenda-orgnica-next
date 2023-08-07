@@ -1,0 +1,22 @@
+@import '/src/styles/theme.scss';
+
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: $primary;
+    height: 4rem;
+}
+.tags {
+   margin-left: 5rem;
+   list-style: none;
+}
+.link {
+    text-decoration: none;
+    color: $white;
+    font-size: 1rem;
+    margin-right: 2rem;
+    transition: color 0.2s ease-in-out;
+}
+.link:hover {
+    color: $secondary;
+}

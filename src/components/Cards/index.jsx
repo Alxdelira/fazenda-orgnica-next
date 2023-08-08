@@ -7,42 +7,49 @@ const ApiCard = [
         imagem: './assets/img/1.png',
         titulo: 'Produção de Uva',
         descricaco: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        produto: 'uva'
     },
     {
         id: 2,
         imagem: './assets/img/2.png',
         titulo: 'Gado de Corte',
         descricaco: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        produto: 'boi'
     },
     {
         id: 3,
         imagem: './assets/img/3.png',
         titulo: 'Produção de Laranja',
         descricaco: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        produto: 'laranja'
     },
     {
         id: 4,
         imagem: './assets/img/4.png',
         titulo: 'Caprinos',
         descricaco: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        produto: 'bode'
     },
     {
         id: 5,
         imagem: './assets/img/5.png',
         titulo: 'Produção de ovos',
         descricaco: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        produto: 'ovos'
     },
     {
         id: 6,
         imagem: './assets/img/6.png',
         titulo: 'Produção de Tomate',
         descricaco: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        produto: 'tomate'
     },
     {
         id: 7,
         imagem: './assets/img/7.png',
         titulo: 'Hortifruti',
         descricaco: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        produto: 'hortifruti'
     },
    
 ];
@@ -60,7 +67,7 @@ export default function Cards  () {
                         <p>{item.descricaco}</p>
                     </div>
                     <div className={styles.button}>
-                        <Link  href="/sobre" className={styles.buttonText}>
+                        <Link  href={`/produto/${item.produto}`} className={styles.buttonText}>
                             Saiba mais
                         </Link>
                     </div>
